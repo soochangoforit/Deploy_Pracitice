@@ -20,7 +20,6 @@ if [ ! -z ${TARGET_PID} ]; then
   sudo kill ${TARGET_PID}
 fi
 
-echo "> username: ${username}"
 nohup java -jar -Dserver.port=${TARGET_PORT} /home/ec2-user/test-deploy/build/libs/*.jar > /home/ec2-user/${TARGET_PORT}.out 2>&1 &
 echo "> Now new WAS runs at ${TARGET_PORT}."
 exit 0
