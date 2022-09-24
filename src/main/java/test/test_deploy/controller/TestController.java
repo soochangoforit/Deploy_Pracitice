@@ -13,7 +13,7 @@ public class TestController {
 
     private final TestRepository testRepository;
 
-    @GetMapping("/")
+    @GetMapping("/test")
     @ResponseBody
     public Test test(){
 
