@@ -2,9 +2,9 @@ spring:
   profiles:
     active: local
   datasource:
-    url: jdbc:mysql://~~:3306/~~
-    username: your_db_username
-    password: your_db_password
+    url: ${datasource}
+    username: ${username}
+    password: ${password}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
