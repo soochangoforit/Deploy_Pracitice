@@ -1,20 +1,3 @@
 spring:
   profiles:
-    active: local
-  datasource:
-    url: ${datasource}
-    username: ${username}
-    password: ${password}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: create
-    properties:
-      hibernate:
-        format_sql: true
-    database: mysql
-
-logging.level:
-  org.hibernate.SQL: debug
-  com.airbnb: debug
+    active: ${profile}

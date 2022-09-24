@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${datasource}
+    username: ${username}
+    password: ${password}
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+
+logging.level:
+  org.hibernate.SQL: debug
+  com.airbnb: debug
