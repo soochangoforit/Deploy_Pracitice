@@ -25,7 +25,7 @@ public class TestController {
         return saved;
     }
 
-    @GetMapping("/api/healthcheck")
+    @GetMapping("/hello")
     @ResponseBody
     public String healthcheck(){
         return "ok";
