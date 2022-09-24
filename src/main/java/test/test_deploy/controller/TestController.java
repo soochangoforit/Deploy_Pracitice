@@ -18,7 +18,7 @@ public class TestController {
     public Test test(){
 
         Test test = new Test();
-        test.setName("이수찬123123d");
+        test.setName("이수찬123123dasdssd");
 
         Test saved = testRepository.save(test);
 
