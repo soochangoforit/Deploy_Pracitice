@@ -24,4 +24,11 @@ public class TestController {
 
         return saved;
     }
+
+    @GetMapping("/api/healthcheck")
+    @ResponseBody
+    public String healthcheck(){
+        return "ok";
+    }
+
 }
