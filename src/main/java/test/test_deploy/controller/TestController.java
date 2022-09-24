@@ -10,6 +10,6 @@ public class TestController {
     @GetMapping("/")
     @ResponseBody
     public String test(){
-        return "test gg, testing s3 , testing 3 for s3, testing code deploy";
+        return "test gg, testing s3 , testing 3 for s3, testing code deploy ++++ now we going no stop deploy";
     }
 }
