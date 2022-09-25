@@ -1,7 +1,8 @@
 
 spring:
-  profiles:
-    active: prod
+  config:
+    activate:
+      on-profile: prod
 
   datasource:
     url: jdbc:mysql://${dburl}:3306/${dbname}
